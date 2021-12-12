@@ -19,6 +19,7 @@ const MenuComponent = (props) => {
             </div>
         )
     })
+
     return (
         <div className='container'>
             <div className='row'>
