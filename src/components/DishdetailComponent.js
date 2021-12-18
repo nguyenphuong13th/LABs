@@ -20,19 +20,7 @@ import {Media} from 'reactstrap';
 //     }
 // }
 // export default DishdetailComponent;
-// function RenderComment(props){
-//     const dishDetail = props.ChosenDishes.map((dish,index)=>{
-//         return(
-//             <div key={dish.id} className='col-12 col-md-5 m-1'>
-//                 <h4>{'Comments'}</h4>
-//                 <ul>
-//                     <li>{dish.comments[index].author}</li>
-//                     <li>{dish.comments[index].comment}</li>
-//                 </ul>
-//             </div>
-//         )
-//     })
-// }
+
 function DishdetailComponent(props){
     return (<div className='col-12 col-md-5 m-1'>
                      <Card>
@@ -42,7 +30,6 @@ function DishdetailComponent(props){
                              <CardText>{props.ChosenDishes?.description}</CardText>
                          </CardBody>
                      </Card>
-                    {/* <RenderComment/> */}
             </div>
         )
 }

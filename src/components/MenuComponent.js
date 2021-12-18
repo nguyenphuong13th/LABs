@@ -1,8 +1,9 @@
 import { Card,CardImg,CardImgOverlay,CardText,CardBody,CardTitle } from 'reactstrap'
 import { useState } from 'react'
 import DishdetailComponent from './DishdetailComponent'
+import Dishcomments from './Dishcomments'
 const MenuComponent = (props) => {
-    const [selectedDish,setselectedDish] = useState()
+    const [selectedDish,setselectedDish] = useState(null)
     const onDishSelect=(dish)=>{
         setselectedDish(dish);
         console.log('selectedDish:'+selectedDish);
@@ -27,6 +28,7 @@ const MenuComponent = (props) => {
             </div>
             <div className='row'>
                 <DishdetailComponent ChosenDishes = {selectedDish}/>
+                <Dishcomments ChosenDishes = {selectedDish}/>
             </div>
         </div>
     )
